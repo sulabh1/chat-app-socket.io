@@ -13,14 +13,13 @@ module.exports = {
       email: { type: Sequelize.STRING, allowNull: false, unique: true },
       password: {
         type: Sequelize.STRING,
-        allowNull: false,
+
         validate: { min: 8 },
       },
       image: { type: Sequelize.STRING, defaultValue: "default.png" },
       facebook: { type: Sequelize.STRING, defaultValue: "" },
-      fbTokens: Sequelize.ARRAY(Sequelize.TEXT),
+      fbTokens: { type: Sequelize.STRING },
       google: { type: Sequelize.STRING, defaultValue: "" },
-      googleTokens: Sequelize.ARRAY(Sequelize.TEXT),
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

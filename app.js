@@ -6,6 +6,8 @@ const session = require("express-session");
 const passport = require("passport");
 const helmet = require("helmet");
 require("./auth/passport")(passport);
+require("./auth/passport-facebook")(passport);
+require("./auth/passport-google")(passport);
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));

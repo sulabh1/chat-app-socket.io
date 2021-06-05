@@ -1,0 +1,245 @@
+body {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #eeeeee;
+}
+.navbar {
+  background-color: #4aa1f3;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 900px;
+}
+.navbar-brand:hover {
+  color: #fff !important;
+  background-color: #4aa1f3;
+}
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+}
+.logout {
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #5c5c5b;
+}
+
+h2 {
+  font-size: 32px;
+  color: #5c5c5b;
+  margin-top: 0px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.margin-80 {
+  margin-bottom: 80px;
+}
+
+.new_message_head button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  outline: 0;
+  font-size: 17px;
+  color: #4aa1f3;
+}
+
+.new_message_head button:focus {
+  outline: 0 !important;
+}
+
+.new_message_head {
+  background: white none repeat scroll 0 0;
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 18px 10px;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.32);
+}
+
+.message_section {
+  border: 1px solid #dddddd;
+}
+
+.chat_area {
+  background: white;
+  float: left;
+  height: 360px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  border-left: 1px solid rgba(128, 128, 128, 0.32);
+
+  border-right: 1px solid rgba(128, 128, 128, 0.32);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.chat_area li {
+  padding: 14px 14px 0;
+}
+
+.chat_area li .chat-img1 img {
+  height: 40px;
+  width: 40px;
+}
+
+.chat_area .chat-body1 {
+  margin-left: 50px;
+}
+
+.chat_area li:last-child {
+  padding-bottom: 10px;
+}
+
+.message_write {
+  background: white none repeat scroll 0 0;
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+.message_write textarea.form-control {
+  height: 70px;
+  padding: 10px;
+}
+
+.chat_bottom {
+  float: left;
+  margin-top: 13px;
+  width: 100%;
+}
+
+.friends {
+  font-size: 18px;
+  color: gray;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  outline: 0 !important;
+}
+
+.card {
+  background: none repeat scroll 0 0 #ffffff;
+  border-radius: 4px;
+  color: #444444;
+}
+
+.card .cover {
+  height: 105px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.card .cover img {
+  width: 100%;
+}
+
+.card .user {
+  border-radius: 50%;
+  display: block;
+  height: 120px;
+  margin: -55px auto 0;
+  overflow: hidden;
+  width: 120px;
+}
+
+.card .user img {
+  background: none repeat scroll 0 0 #ffffff;
+  border: 4px solid #ffffff;
+  width: 100%;
+}
+
+.card .content {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  padding: 10px 20px 20px;
+}
+
+.card .main {
+  min-height: 160px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.card .back .content .main {
+  height: 215px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.card .name {
+  font-family: "Arima Madurai", cursive;
+  font-size: 22px;
+  line-height: 28px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.card .profession-online {
+  color: #999999;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.online {
+  font-size: 10px;
+  color: rgba(129, 191, 57, 0.95);
+  position: relative;
+  top: -2px;
+}
+
+.card .footer {
+  color: #999999;
+  margin: 30px 0 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+.main-scroll {
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.online_friend {
+  font-size: 10px;
+  color: rgba(129, 191, 57, 0.95);
+  position: relative;
+  float: right;
+}
+
+.gr-rightsidebar {
+  padding-top: 15px;
+  background: white;
+  float: left;
+  height: 506px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  border-left: 1px solid rgba(128, 128, 128, 0.32);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.32);
+  border-right: 1px solid rgba(128, 128, 128, 0.32);
+}

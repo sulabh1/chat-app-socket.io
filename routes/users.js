@@ -65,4 +65,29 @@ router.get("/logout", (req, res) => {
   req.flash("success_msg", "You are logged out");
   res.redirect("/users/login");
 });
+router.get("/facebook", (req, res, next) => {
+  passport.authenticate("facebook", {
+    scope: "email",
+  })(req, res, next);
+});
+
+router.get("/facebook/callback", (req, res, next) => {
+  passport.authenticate("facebook", {
+    successRedirect: "/message",
+    failureRedirect: "/users/login",
+    failureFlash: true,
+  })(req, res, next);
+});
+router.get("/google", (req, res, next) => {
+  passport.authenticate("google", {
+    scope: ["profile", "email"],
+  })(req, res, next);
+});
+router.get("/google/callback", (req, res, next) => {
+  passport.authenticate("google", {
+    successRedirect: "/message",
+    failureRedirect: "/users/login",
+    failureFlash: true,
+  })(req, res, next);
+});
 module.exports = router;

@@ -18,14 +18,13 @@ module.exports = (sequelize, DataTypes) => {
       email: { type: DataTypes.STRING, allowNull: false, unique: true },
       password: {
         type: DataTypes.STRING,
-        allowNull: false,
+
         validate: { min: 8 },
       },
       image: { type: DataTypes.STRING, defaultValue: "default.png" },
       facebook: { type: DataTypes.STRING, defaultValue: "" },
-      fbTokens: DataTypes.ARRAY(DataTypes.TEXT),
+      fbTokens: { type: DataTypes.STRING },
       google: { type: DataTypes.STRING, defaultValue: "" },
-      googleTokens: DataTypes.ARRAY(DataTypes.TEXT),
     },
 
     {
